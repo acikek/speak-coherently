@@ -2,10 +2,13 @@ package com.acikek.speakcoherently.item;
 
 import com.acikek.speakcoherently.SpeakCoherently;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
 import net.minecraft.util.registry.Registry;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ModItems {
@@ -26,5 +29,9 @@ public class ModItems {
 		for (Map.Entry<String, Item> item : ITEMS.entrySet()) {
 			Registry.register(Registry.ITEM, SpeakCoherently.id(item.getKey()), item.getValue());
 		}
+	}
+
+	public static void appendPotions(List<ItemStack> stacks) {
+
 	}
 }

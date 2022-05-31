@@ -1,4 +1,13 @@
 {
   "item.speakcoherently.brazil": "Brazil",
-  "itemGroup.speakcoherently.main": "Speak Coherently"
+  "itemGroup.speakcoherently.main": "Speak Coherently",
+  "effect.speakcoherently.silence": "Silence",
+  "item.minecraft.potion.effect.silence_potion": "Potion of Silence",
+  "item.minecraft.lingering_potion.effect.silence_potion": "Lingering Potion of Silence",
+  "item.minecraft.splash_potion.effect.silence_potion": "Splash Potion of Silence",
+  "item.minecraft.tipped_arrow.effect.silence_potion": "Arrow of Silence",
+  "item.minecraft.potion.effect.long_silence_potion": "Potion of Silence",
+  "item.minecraft.lingering_potion.effect.long_silence_potion": "Lingering Potion of Silence",
+  "item.minecraft.splash_potion.effect.long_silence_potion": "Splash Potion of Silence",
+  "item.minecraft.tipped_arrow.effect.long_silence_potion": "Arrow of Silence"
 }

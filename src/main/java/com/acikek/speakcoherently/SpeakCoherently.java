@@ -1,6 +1,8 @@
 package com.acikek.speakcoherently;
 
+import com.acikek.speakcoherently.effect.ModStatusEffects;
 import com.acikek.speakcoherently.item.ModItems;
+import com.acikek.speakcoherently.item.ModPotions;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -16,6 +18,7 @@ public class SpeakCoherently implements ModInitializer {
 
 	public static final ItemGroup ITEM_GROUP = QuiltItemGroup.builder(id("main"))
 			.icon(() -> new ItemStack(ModItems.BRAZIL))
+			.appendItems(ModPotions::appendStacks)
 			.build();
 
 	public static Identifier id(String path) {
@@ -28,5 +31,7 @@ public class SpeakCoherently implements ModInitializer {
 	public void onInitialize(ModContainer mod) {
 		LOGGER.info("This mod was a mistake");
 		ModItems.register();
+		ModStatusEffects.register();
+		ModPotions.register();
 	}
 }
